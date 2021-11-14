@@ -32,6 +32,7 @@ The choices for devices are:
 8. Droid DNA
 9. HTC One
 10. iPhone 3
+11. ALL (if using this one, it should be the only device value)
 
 
 

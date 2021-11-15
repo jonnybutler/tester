@@ -15,8 +15,7 @@ public interface DevicesRepo extends CrudRepository<Devices, Long>{
     List<Long> findAllByDevicesList(List<String> devicesList);
 
     @Query(
-            value = "Select deviceId FROM Devices",
-            nativeQuery = true)
+            value = "Select deviceId FROM Devices")
     List<Long> findAllById();
 
 }

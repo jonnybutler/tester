@@ -34,7 +34,7 @@ public class SearchServiceImpl implements SearchService{
         List<Long> deviceIds;
         // Check if Devices is ALL
         if (devices.size() == 1 && devices.get(0).equals("ALL")){
-            deviceIds = devicesRepo.findAllByDevicesList(devices);
+            deviceIds = devicesRepo.findAllById();
         } else{
             deviceIds = devicesRepo.findAllByDevicesList(devices);
         }
